@@ -333,23 +333,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Flask**: Backend framework
 - **Vercel & Railway**: Free cloud hosting
 
-## 📧 Support
 
-For support and questions:
-- Create an issue on GitHub
-- Check the [Deployment Guide](DEPLOYMENT_GUIDE.md)
-- Review the [Troubleshooting section](DEPLOYMENT_GUIDE.md#troubleshooting)
-
-## 🌟 Star this Project
-
-If you find this project helpful, please give it a star ⭐ on GitHub!
-
----
-
-**Made with ❤️ for farmers and agricultural communities worldwide**
-
-### 🎯 Live Demo
-- **Frontend**: https://yourapp.vercel.app
-- **API Health**: https://yourapp.railway.app/health
-
-*Replace with your actual deployment URLs after deployment*
