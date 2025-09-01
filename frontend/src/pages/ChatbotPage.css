@@ -1,0 +1,321 @@
+/* Chatbot Page Styles */
+.chatbot-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%);
+    padding: 20px;
+}
+
+.chatbot-page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.chatbot-page-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.chatbot-features {
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #2e7d32;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Location Prompt */
+.location-prompt {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.location-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.location-card h3 {
+    color: #2e7d32;
+    margin-bottom: 16px;
+}
+
+.location-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.location-inputs input {
+    padding: 12px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.location-inputs input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.location-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.location-btn:hover:not(:disabled) {
+    background: #45a049;
+}
+
+.location-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Chat Instructions */
+.chat-instructions {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.chat-instructions h2 {
+    color: #2e7d32;
+    margin-bottom: 30px;
+}
+
+.instruction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.instruction-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.step-number {
+    background: #4CAF50;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.instruction-item p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Sample Queries */
+.sample-queries {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.sample-queries h3 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.query-examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.query-item {
+    background: #f0f8f0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+    color: #2e7d32;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.query-item:hover {
+    background: #e8f5e8;
+    transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chatbot-page {
+        padding: 10px;
+    }
+    
+    .chatbot-page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .chatbot-page-header p {
+        font-size: 1rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .feature-card {
+        padding: 20px;
+    }
+    
+    .instruction-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .instruction-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .query-examples {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-page-header {
+        padding: 20px 10px;
+    }
+    
+    .feature-card,
+    .location-card,
+    .chat-instructions,
+    .sample-queries {
+        padding: 20px;
+        margin: 0 5px;
+    }
+    
+    .location-inputs {
+        gap: 8px;
+    }
+    
+    .location-inputs input {
+        padding: 10px 12px;
+    }
+}
+
+/* Animation for page load */
+.chatbot-page {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth transitions for interactive elements */
+.feature-card,
+.location-card,
+.chat-instructions,
+.sample-queries {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover,
+.location-card:hover,
+.chat-instructions:hover,
+.sample-queries:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
