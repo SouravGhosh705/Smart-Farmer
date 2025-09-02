@@ -1,3 +1,13 @@
+"scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "dev": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+  "build:local": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+  "vercel-build": "react-scripts build"
+}
+
 {
 	"name": "frontendv2",
 	"version": "0.1.0",
